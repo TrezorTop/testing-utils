@@ -1,0 +1,11 @@
+# ninja log v5
+0	427	7057087783136752	CMakeFiles/TestingFramework.dir/main.cpp.obj	b9863c39ed1ba1dd
+428	482	7057087783676879	TestingFramework.exe	8bfa40ddfa7b580c
+2	363	7057088579742503	CMakeFiles/TestingFramework.dir/main.cpp.obj	b9863c39ed1ba1dd
+363	412	7057088580212609	TestingFramework.exe	8bfa40ddfa7b580c
+2	365	7057093970805459	CMakeFiles/TestingFramework.dir/main.cpp.obj	b9863c39ed1ba1dd
+366	417	7057093971295602	TestingFramework.exe	8bfa40ddfa7b580c
+2	349	7057094162775924	CMakeFiles/TestingFramework.dir/main.cpp.obj	b9863c39ed1ba1dd
+349	397	7057094163243085	TestingFramework.exe	8bfa40ddfa7b580c
+2	378	7057095761783240	CMakeFiles/TestingFramework.dir/main.cpp.obj	b9863c39ed1ba1dd
+379	432	7057095762293355	TestingFramework.exe	8bfa40ddfa7b580c
