@@ -1,20 +1,13 @@
-#include <iostream>
+#include <vector>
 
-int Add(int x, int y) {
-    return x * y;
-}
-
-template<typename T1, typename T2>
-void AssertEqual(const T1& value, const T2& expected, const std::string& hint) {
-    if (value == expected) return;
-
-    std::cout << "Assertion failed: " << value << " != " << expected << '\n';
-    std::cout << "Hint: " << hint << '\n';
-    abort();
-}
+#include "testing_tools/assert/assert.h"
+#include "testing_tools/assert_equal/assert_equal.h"
 
 int main() {
-    AssertEqual(Add(2, 3), 5, "Add() must add its arguments");
+  std::vector container = {1, 0, 2, -3, 6, 2, 4, 3};
+  std::vector expected = {1, 0, 2, -3, 6, 2, 4};
 
-    return 0;
+  ASSERT(container == expected);
+
+  return 0;
 }
