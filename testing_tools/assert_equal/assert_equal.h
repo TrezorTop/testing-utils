@@ -19,13 +19,13 @@ void AssertEqualImpl(
 ) {
   if (value == expected) return;
 
-  std::cout << std::boolalpha;
-  std::cout << file << '(' << line << "): " << function << "()" << '\n';
-  std::cout << "ASSERT_EQUAL(" << valueString << ", " << expectedString << ") failed: " << value << " != " << expected
+  std::cerr << std::boolalpha;
+  std::cerr << file << '(' << line << "): " << function << "()" << '\n';
+  std::cerr << "ASSERT_EQUAL(" << valueString << ", " << expectedString << ") failed: " << value << " != " << expected
             << '\n';
-  if (!hint.empty()) std::cout << "Hint: " << hint;
+  if (!hint.empty()) std::cerr << "Hint: " << hint;
 
-  std::cout << '\n';
+  std::cerr << '\n';
   abort();
 }
 

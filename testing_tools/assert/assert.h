@@ -15,12 +15,12 @@ void AssertImpl(
 ) {
   if (value) return;
 
-  std::cout << std::boolalpha;
-  std::cout << file << '(' << line << "): " << function << "()" << '\n';
-  std::cout << "ASSERT(" << valueString << ") failed: " << valueString << " is not " << true << '\n';
-  if (!hint.empty()) std::cout << "Hint: " << hint;
+  std::cerr << std::boolalpha;
+  std::cerr << file << '(' << line << "): " << function << "()" << '\n';
+  std::cerr << "ASSERT(" << valueString << ") failed: " << valueString << " is not " << true << '\n';
+  if (!hint.empty()) std::cerr << "Hint: " << hint;
 
-  std::cout << '\n';
+  std::cerr << '\n';
   abort();
 }
 
